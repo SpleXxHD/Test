@@ -1,4 +1,4 @@
-"if host:isHost() then  
+if host:isHost() then  
 local files = listFiles("", true)
 local Promise_module
 
@@ -148,4 +148,4 @@ function pings.Search()
             isRequesting = false
         end)
 end
-end"
+end
