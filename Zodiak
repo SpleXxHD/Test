@@ -11,6 +11,8 @@
       |_|                                  
 
 discord: splexxhd
+https://github.com/SpleXxHD
+
 
 if host:isHost() then  
     local function loadHostOnly(script)
