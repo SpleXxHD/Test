@@ -84,7 +84,7 @@ function events.mouse_press(button, action, modifier)
 end
 
 function pings.Search()
-
+log("тест")
     -- Если запрос уже идет, ничего не делаем
     if isRequesting then return end
 
