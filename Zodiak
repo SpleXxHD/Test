@@ -1,13 +1,13 @@
 if host:isHost() then  
-local function load(script)
-    if host:isHost() then
-        local content = file:readString(script .. ".lua")
-        return content and loadstring(content, script)()
+    local function loadHostOnly(script)
+    local content = file:readString(script .. ".lua")
+        if content ~= nil then
+            local fn = loadstring(content, script)
+            return fn()  -- returns whatever the script returns
+        end
     end
-end
 
--- Загружаем Promise
-local Promise = load("Promise")
+    local Promise = loadHostOnly("GithubLoader/Promise")
 
 log("Zodiak")
 -- Настройки
